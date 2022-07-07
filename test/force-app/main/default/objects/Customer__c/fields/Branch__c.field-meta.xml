@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Branch__c</fullName>
+    <externalId>false</externalId>
+    <label>Branch</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Secuderabad</fullName>
+                <default>false</default>
+                <label>Secuderabad</label>
+            </value>
+            <value>
+                <fullName>Ameerpet</fullName>
+                <default>false</default>
+                <label>Ameerpet</label>
+            </value>
+            <value>
+                <fullName>Hytech city</fullName>
+                <default>false</default>
+                <label>Hytech city</label>
+            </value>
+            <value>
+                <fullName>Madhapur</fullName>
+                <default>false</default>
+                <label>Madhapur</label>
+            </value>
+            <value>
+                <fullName>Kukatpalli</fullName>
+                <default>false</default>
+                <label>Kukatpalli</label>
+            </value>
+            <value>
+                <fullName>Marina Beach</fullName>
+                <default>false</default>
+                <label>Marina Beach</label>
+            </value>
+            <value>
+                <fullName>Tambram</fullName>
+                <default>false</default>
+                <label>Tambram</label>
+            </value>
+            <value>
+                <fullName>Kottam</fullName>
+                <default>false</default>
+                <label>Kottam</label>
+            </value>
+            <value>
+                <fullName>Kanya Kumari</fullName>
+                <default>false</default>
+                <label>Kanya Kumari</label>
+            </value>
+            <value>
+                <fullName>RCPuram</fullName>
+                <default>false</default>
+                <label>RCPuram</label>
+            </value>
+            <value>
+                <fullName>BTM Layout</fullName>
+                <default>false</default>
+                <label>BTM Layout</label>
+            </value>
+            <value>
+                <fullName>Elecronic city</fullName>
+                <default>false</default>
+                <label>Elecronic city</label>
+            </value>
+            <value>
+                <fullName>JayaNagar</fullName>
+                <default>false</default>
+                <label>JayaNagar</label>
+            </value>
+            <value>
+                <fullName>Banashenkari</fullName>
+                <default>false</default>
+                <label>Banashenkari</label>
+            </value>
+            <value>
+                <fullName>Contonment</fullName>
+                <default>false</default>
+                <label>Contonment</label>
+            </value>
+            <value>
+                <fullName>New Delhi</fullName>
+                <default>false</default>
+                <label>New Delhi</label>
+            </value>
+            <value>
+                <fullName>Parlament</fullName>
+                <default>false</default>
+                <label>Parlament</label>
+            </value>
+            <value>
+                <fullName>Rasrapati Bhavan</fullName>
+                <default>false</default>
+                <label>Rasrapati Bhavan</label>
+            </value>
+            <value>
+                <fullName>Navi Mumbai</fullName>
+                <default>false</default>
+                <label>Navi Mumbai</label>
+            </value>
+            <value>
+                <fullName>Taj Mahal</fullName>
+                <default>false</default>
+                <label>Taj Mahal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

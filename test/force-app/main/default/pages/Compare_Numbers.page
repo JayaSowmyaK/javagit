@@ -1,0 +1,35 @@
+<apex:page sidebar="false" showHeader="false" controller="FirstRCalcGreatorLess">
+    <apex:form >
+        <apex:pageBlock title="Calculations" >
+            <apex:pageBlockSection title="Grater or Less of Given Number" columns="1">
+                 <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Enter First Number"/>
+                    <apex:inputText value="{!Num1}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Enter Second Number"/>
+                    <apex:inputText value="{!Num2}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Enter Third Number"/>
+                    <apex:inputText value="{!Num3}" />
+                </apex:pageBlockSectionItem>
+              
+            
+                <apex:selectRadio label="Select to calculate" value="{!Choice}">
+                   <apex:selectOption itemLabel="Grater" itemValue="G" />
+                    <apex:selectOption itemLabel="Small" itemValue="S" />
+                </apex:selectRadio>
+                
+               <apex:commandButton value="Calculate" action="{!MainCalc}"/>
+               
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="The Result is:"/>
+                    <apex:outputText value="{!Result}" /> 
+                </apex:pageBlockSectionItem>
+            
+               
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

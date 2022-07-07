@@ -1,0 +1,4 @@
+<apex:page >
+    <apex:pageBlock title="Registration">
+    </apex:pageBlock>
+</apex:page>

@@ -1,0 +1,39 @@
+<apex:page sidebar="false" showHeader="false" standardController="Account">
+    
+    <apex:pageBlock title="Registration">
+        <apex:pageBlockSection title="General Info" columns="3">
+            <apex:outputField value="{!Account.Name}"/>
+            <apex:outputField value="{!Account.Industry}"/>
+            <apex:outputField value="{!Account.fax}"/>
+            <apex:outputField value="{!Account.rating}"/>
+            <apex:outputField value="{!Account.BillingCity}"/>
+            <apex:outputField value="{!Account.Phone}"/>
+        </apex:pageBlockSection>
+      
+        <apex:pageBlockSection title="Reg Info" columns="1">
+            <apex:relatedList list="Cases"/>
+            <apex:relatedList list="Opportunities"/>
+            <apex:relatedList list="Contacts"/>
+        </apex:pageBlockSection>
+        <apex:pageBlockSection title="Payment Info">
+            <apex:pageBlockTable value="{!Account.Contacts}" var="ac" >
+                <apex:column value="{!ac.FirstName}" width="700"/>
+                <apex:column value="{!ac.LastName}" width="700"/>
+               <apex:column value="{!ac.Phone}" width="700"/>
+                <apex:column value="{!ac.Email}" width="700"/>
+                
+            </apex:pageBlockTable>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    <apex:pageBlock title="Personal Details">
+        <apex:pageBlockSection title="Immidiate Family Info">
+            <apex:detail />
+        </apex:pageBlockSection>
+        <apex:pageBlockSection title="RelativeInfo">
+        </apex:pageBlockSection>
+        <apex:pageBlockSection title="Friends Info">
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+   
+    
+</apex:page>

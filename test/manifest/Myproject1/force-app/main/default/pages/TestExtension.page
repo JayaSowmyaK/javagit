@@ -1,0 +1,36 @@
+<apex:page standardController="Account">
+    <apex:form >
+   <apex:pageBlock >
+        <apex:pageBlockSection title="Account" columns="1">
+            <apex:inputField value="{!Account.Name}"/>
+            <apex:inputField value="{!Account.Phone}"/>
+            <apex:inputField value="{!Account.Fax}"/>
+            <apex:inputField value="{!Account.Industry}"/>
+           
+            <apex:commandButton value="SaveSFDC" action="{!Save}"/>
+            </apex:pageBlockSection>
+        
+       <apex:pageBlockSection title="Calculation" columns="1">
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Enter Num1"/>
+                <apex:inputText />
+                
+           </apex:pageBlockSectionItem>
+           <apex:pageBlockSectionItem >
+               <apex:outputLabel value="Enter Num2"/>
+                <apex:inputText />
+                
+           </apex:pageBlockSectionItem>
+           <apex:pageBlockSectionItem >
+               <apex:outputLabel value="Enter Num3"/>
+                <apex:inputText />
+                
+           </apex:pageBlockSectionItem>
+           <apex:commandButton value="Calculate"/>
+           <apex:pageBlockSectionItem >
+               <apex:outputLabel value="The Result is:"/>
+                <apex:outputText />
+           </apex:pageBlockSectionItem>
+       </apex:pageBlockSection></apex:pageBlock></apex:form>
+           
+</apex:page>

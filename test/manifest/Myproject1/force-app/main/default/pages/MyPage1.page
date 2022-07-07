@@ -1,0 +1,26 @@
+<apex:page >
+    <apex:pageBlock title="General Info">
+    <apex:pageBlockSection title="school">
+        My friends
+        appu
+        renu
+    </apex:pageBlockSection>
+    <apex:pageBlockSection title="Family">
+        My friends
+        prajna
+        deep
+    </apex:pageBlockSection>
+    </apex:pageBlock>
+    <apex:pageBlock title="contacts Info">
+    <apex:pageBlockSection title="school">
+        My friends
+        88888
+        99999
+    </apex:pageBlockSection>
+    <apex:pageBlockSection title="Family">
+        My friends
+        4444444444
+        6666666666
+    </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

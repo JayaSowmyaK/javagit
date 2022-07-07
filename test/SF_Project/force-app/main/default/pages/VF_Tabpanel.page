@@ -1,0 +1,92 @@
+<apex:page sidebar="false" showHeader="false" standardController="Account">
+    <apex:tabPanel >
+    <apex:tab label="New Registration-Tab1">
+        <apex:form >
+        <apex:pageBlock title="Customer Details">
+            <apex:pageBlockSection title="Basic Details">
+                <apex:inputField value="{!Account.Name}" />
+                <apex:inputField value="{!Account.Phone}"/>
+                 <apex:inputField value="{!Account.Fax}" />
+                <apex:inputField value="{!Account.Industry}"/>
+                 <apex:inputField value="{!Account.Rating}" />
+                <apex:inputField value="{!Account.BillingCity}"/>
+                 <apex:inputField value="{!Account.Description}" />
+                <apex:inputField value="{!Account.Sic}"/>
+                <apex:inputSecret value="{!Account.Name}"/>
+                <apex:inputHidden value="{!Account.Fax}"/>
+                
+                <apex:selectRadio label="Select Course" layout="pageDirection">
+                    <apex:selectOption itemLabel="Salesforce" itemValue="SFDC" />
+                    <apex:selectOption itemLabel="Microsoft" itemValue="net" />
+                    <apex:selectOption itemLabel="Sap CRM" itemValue="SAP" />
+                    <apex:selectOption itemLabel="JavaCore" itemValue="java" />
+                    <apex:selectOption itemLabel="Sfdc Lightning" itemValue="SFDCLT" />
+                </apex:selectRadio>
+               
+                <apex:selectCheckboxes label="Select Course" layout="pageDirection">
+                    <apex:selectOption itemLabel="Salesforce" itemValue="SFDC" />
+                    <apex:selectOption itemLabel="Microsoft" itemValue="net" />
+                    <apex:selectOption itemLabel="Sap CRM" itemValue="SAP" />
+                    <apex:selectOption itemLabel="JavaCore" itemValue="java" />
+                    <apex:selectOption itemLabel="Sfdc Lightning" itemValue="SFDCLT" />
+            </apex:selectCheckboxes>
+                <apex:selectList label="Select Course" multiselect="true">
+                    <apex:selectOption itemLabel="Salesforce" itemValue="SFDC" />
+                    <apex:selectOption itemLabel="Microsoft" itemValue="net" />
+                    <apex:selectOption itemLabel="Sap CRM" itemValue="SAP" />
+                    <apex:selectOption itemLabel="JavaCore" itemValue="java" />
+                    <apex:selectOption itemLabel="Sfdc Lightning" itemValue="SFDCLT" />
+                </apex:selectList>
+                
+                
+                
+                <apex:commandButton value="Click Here to Save" action="{!SAVE}" />
+                <apex:commandLink value="Click Here to Save" action="{!SAVE}"/>
+                
+                <apex:commandButton value="Click Here to Delete" action="{!delete}" />
+            </apex:pageBlockSection></apex:pageBlock></apex:form>
+    </apex:tab>
+    <apex:tab label="Payment Details- Tab2">
+    </apex:tab>
+        <apex:tab label="Tab 3">
+        <apex:pageBlock title="Registration">
+        <apex:pageBlockSection title="General Info" columns="3">
+            <apex:outputField value="{!Account.Name}"/>
+            <apex:outputField value="{!Account.Industry}"/>
+            <apex:outputField value="{!Account.fax}"/>
+            <apex:outputField value="{!Account.rating}"/>
+            <apex:outputField value="{!Account.BillingCity}"/>
+            <apex:outputField value="{!Account.Phone}"/>
+        </apex:pageBlockSection>
+      
+            
+        <apex:pageBlockSection title="Reg Info" columns="1">
+            <apex:relatedList list="Cases"/>
+            <apex:relatedList list="Opportunities"/>
+            <apex:relatedList list="Contacts"/>
+        </apex:pageBlockSection>
+        <apex:pageBlockSection title="Payment Info">
+            <apex:pageBlockTable value="{!Account.Contacts}" var="ac" >
+                <apex:column value="{!ac.FirstName}" width="700"/>
+                <apex:column value="{!ac.LastName}" width="700"/>
+               <apex:column value="{!ac.Phone}" width="700"/>
+                <apex:column value="{!ac.Email}" width="700"/>
+                
+            </apex:pageBlockTable>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    <apex:pageBlock title="Personal Details">
+        <apex:pageBlockSection title="Immidiate Family Info">
+            <apex:detail />
+        </apex:pageBlockSection>
+        <apex:pageBlockSection title="RelativeInfo">
+        </apex:pageBlockSection>
+        <apex:pageBlockSection title="Friends Info">
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+   
+        </apex:tab>
+    </apex:tabPanel>
+     
+          
+</apex:page>

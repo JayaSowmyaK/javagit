@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Name3char</fullName>
+    <active>true</active>
+    <errorConditionFormula>LEN( Guest_Name__c )&lt;3</errorConditionFormula>
+    <errorDisplayField>Guest_Name__c</errorDisplayField>
+    <errorMessage>Guest Name Can not be Less than 3</errorMessage>
+</ValidationRule>
